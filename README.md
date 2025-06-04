@@ -1,4 +1,10 @@
-# Debug Console for Unity
+<p align="center">
+  <img src="logo.png" alt="TBC Logo" width="180"/>
+</p>
+
+<h1 align="center">TheBugConsole</h1>
+
+## Debug Console for Unity
 
 _A custom, extensible in-game debug console for Unity projects._
 
