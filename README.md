@@ -1,4 +1,4 @@
-# Unity2DScripts
+# TheBugConsole
 
 This repository should contain a collection of personal scripts that I've developed for my 2D Unity projects. (Only one currently)
 
