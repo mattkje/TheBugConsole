@@ -1,41 +1,100 @@
+# Debug Console for Unity
 
-### **Debug Console - Documentation (Under Development)**
-*Created by Shelstad Studios*
+_A custom, extensible in-game debug console for Unity projects._
 
 ---
 
-#### **Overview**
-The Debug Console is a custom-built console specifically designed for Unity, providing a powerful interface for monitoring, debugging, and interacting with game data during runtime. It features an expandable architecture, making it flexible enough to integrate new functionalities as needed throughout the development process.
+## Overview
 
-#### **Key Features**
-1. **Real-time Debugging**:
-   The console allows developers to monitor logs, warnings, errors, and other runtime information in real-time, providing a comprehensive overview of game execution.
+The Debug Console is a modular, expandable tool for Unity that provides a powerful interface for monitoring, debugging, and interacting with your game at runtime. Designed for easy integration and extension, it helps developers streamline testing and debugging workflows.
 
-2. **Command Execution**:
-   Developers can input custom commands into the console, which can be executed on the fly. This is especially useful for testing features, adjusting variables, or triggering in-game events without modifying the source code.
+---
 
-3. **Expandability**:
-   One of the core strengths of the Debug Console is its ability to be extended. Developers can easily add new commands, tools, or UI elements, allowing the console to evolve alongside the game’s needs.
+## Features
 
-#### **Architecture**
-The console is designed with modularity in mind, ensuring that its components are loosely coupled and can be updated or replaced independently. This structure allows for seamless addition of new features without the risk of breaking existing functionality.
+- **Real-time Debugging:**  
+  View logs, warnings, and errors as they happen in-game.
 
-#### **Main Components**
-1. **Console Input**: The text input field where commands are typed by the developer.
-2. **Output Log**: Displays logs, warnings, and errors in an organized format. It can be filtered based on the severity or type of log.
-3. **Command Parser**: Responsible for interpreting the user’s input and executing the appropriate command or script.
-4. **Expandable Modules**: These modules allow for the addition of new commands or features without modifying the core of the console.
+- **Command Execution:**  
+  Input and execute custom commands to interact with your game without code changes.
 
-#### **Usage Example**
-A developer can use the console to execute custom commands, such as:
-- Adjusting player speed: `player.setSpeed(10)`
-- Triggering events: `spawn.enemyAtLocation(50, 30, 0)`
+- **Expandable Architecture:**  
+  Easily add new commands, tools, or UI modules to fit your project’s needs.
 
-#### **Extending the Console**
-To add new functionality, developers can create custom scripts that integrate with the console's API. For example, adding a new command might involve:
-1. Defining the command syntax.
-2. Writing the associated logic in a separate script file.
-3. Registering the new command in the Command Parser.
+---
 
-#### **Conclusion**
-The Debug Console by Team 5 is a versatile tool that simplifies game debugging and testing within Unity. Its built-in expandability ensures that developers can continuously enhance its functionality as the game grows in complexity.
+## Architecture
+
+- **Console Input:**  
+  Type commands directly into the in-game UI.
+
+- **Output Log:**  
+  Organized display of logs, warnings, and errors, with filtering options.
+
+- **Command Parser:**  
+  Interprets and executes user commands.
+
+- **Expandable Modules:**  
+  Add new features or commands without modifying the core system.
+
+---
+
+## Getting Started
+
+1. **Download the Asset:**  
+   Head to the Release section of the repository and download the latest version of the asset. Alternatively, you can clone the repository.
+
+2. **Import the Asset:**  
+   Import the TheBugConsole.unitypackage to your Unity project.
+
+3. **Setup:**  
+   - Assign the required prefabs (console, chat) in the `WindowManager` script.
+   - Optionally, use your own window manager.
+
+4. **Usage:**  
+   - Open the console or chat using the configured key bindings.
+   - Type commands to interact with your game.
+
+---
+
+## Usage Example
+
+- Adjust player speed:
+- Spawn an enemy:
+
+---
+
+## Extending the Console
+
+1. **Define a Command:**  
+   Create a new script and use the provided attribute to register your command.
+
+2. **Implement Logic:**  
+   Write the logic for your command in the script.
+
+3. **Register:**  
+   The console will automatically detect and register new commands at runtime.
+
+---
+
+## Screenshots
+
+**1. Console UI in Action**  
+_The in-game debug console displaying logs and accepting commands:_
+
+![Console UI](TheBugConsole/Materials/screenshotConsole.png)
+
+**2. Chat Template Example**  
+_Example of the simple a chat:_
+
+![Command Execution](TheBugConsole/Materials/screenshotChat.png)
+
+---
+
+## License
+
+MIT License. See `LICENSE` for details.
+
+---
+
+_Created by Shelstad Studios_
