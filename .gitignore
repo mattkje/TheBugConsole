@@ -1,2 +1,5 @@
 /TheBugConsoleProject/
 /TheBugConsole.unitypackage
+/.idea/
+
+*.DS_Store
